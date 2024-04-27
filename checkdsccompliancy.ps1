@@ -2,7 +2,7 @@
 #It also checks for any required dependencies and installs them if necessary.
 
 
-#Requires -Version 5.1
+#Requires -Version 7.4.2
 [CmdletBinding()]
 param ()
 
@@ -39,9 +39,9 @@ $encounteredError = $false
 ##### START SCRIPT #####
 
 # Checks if the PowerShell version is 5.1 or higher
-if ($PSVersionTable.PSVersion.Major -ne 5)
+if ($PSVersionTable.PSVersion.Major -ne 7)
 {
-    Write-Log -Message 'You are not using PowerShell v5. Please make sure you are using that version!'
+    Write-Log -Message 'You are not using PowerShell v7. Please make sure you are using that version!'
     return
 }
 
